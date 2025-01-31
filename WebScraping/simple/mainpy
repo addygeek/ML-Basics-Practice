@@ -1,0 +1,20 @@
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+# Fetching the webpage content
+url = 'https://google.com'
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
+
+# Extracting specific data (for example, all headings)
+headings = soup.find_all('h2')
+
+# Creating a list to store the extracted data
+data = [heading.text.strip() for heading in headings]
+
+# Converting the data into a Pandas DataFrame
+df = pd.DataFrame(data, columns=['Headings'])
+
+# Display the DataFrame
+print(df)
