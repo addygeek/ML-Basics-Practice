@@ -1,7 +1,7 @@
 import googleapiclient.discovery
 
 # Set up YouTube API
-API_KEY = "YOUR_API_KEY"  # Replace with your YouTube API key
+API_KEY = "YOUR_API_KEY"  
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 
