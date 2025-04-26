@@ -4,7 +4,7 @@ import numpy as np
 import time
 from IPython.display import clear_output
 from matplotlib.animation import FuncAnimation
-
+import pandas as pd
 class Environment:
     def __init__(self):
         self.states = [0, 1, 2]
